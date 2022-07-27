@@ -1,2 +1,2 @@
 # ProjetoLanches
-Projeto ASP.NET Core MVC udemy
+Projeto ASP.NET Core MVC (Curso udemy)
