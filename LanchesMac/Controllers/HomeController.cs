@@ -10,6 +10,7 @@ namespace LanchesMac.Controllers
         {
             return View();
         }
+        //adicionado
         public IActionResult Demo()
         {
             return View();
