@@ -1,4 +1,6 @@
 ﻿using LanchesMac.Context;
+using LanchesMac.Repositories;
+using LanchesMac.Repositories.Interfaces;
 using Microsoft.EntityFrameworkCore;
 
 namespace LanchesMac;
@@ -17,6 +19,12 @@ public class Startup
         //Registro do contexto como serviço diseble
         services.AddDbContext<AppDbContext>(options =>
         options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
+
+        // Injeção de Depedência Transient criar instãncia da classe(LancheRepository) 
+        //e injetar no Construtor (ILancherRepository)
+        services.AddTransient<ILancheRepository, LancheRepository >();
+        services.AddTransient<ICategoriaRepository, CategoriaRepository>();
+
         services.AddControllersWithViews();
     }
 
