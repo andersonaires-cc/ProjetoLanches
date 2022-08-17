@@ -20,7 +20,7 @@ public class Startup
         services.AddDbContext<AppDbContext>(options =>
         options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
 
-        // Injeção de Depedência Transient criar instãncia da classe(LancheRepository) 
+        // Injeção de Depedência Transient criar instância da classe(LancheRepository) 
         //e injetar no Construtor (ILancherRepository)
         services.AddTransient<ILancheRepository, LancheRepository >();
         services.AddTransient<ICategoriaRepository, CategoriaRepository>();
