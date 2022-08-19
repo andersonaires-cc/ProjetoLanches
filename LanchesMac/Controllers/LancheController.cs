@@ -11,10 +11,19 @@ namespace LanchesMac.Controllers
         {
             _lancheRepository = lancheRepository;
         }
-
+        
         public IActionResult List()
         {
+            //Definindo a chave e o valor na ViewData
+            ViewData["Titulo"] = "Todos os Lanches";
+            ViewData["Data"] = DateTime.Now;
+
             var lanches = _lancheRepository.Lanches;
+
+            var totalLanches = lanches.Count();
+
+            ViewBag.Total = "Total de Lanches: ";
+            ViewBag.TotalLanches = totalLanches;
             return View(lanches);
         }
     }
