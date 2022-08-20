@@ -1,30 +1,24 @@
 ﻿@model IEnumerable<LanchesMac.Models.Lanche>
 @*View Fortemente tipada*@
 
+
+
 <div> 
-    <h2> @ViewData["Titulo"]</h2>
+    <h2>Todos os Lanches</h2>
 </div>
 
-@*
-    Usando o ViewData para obter os valores 
-    definindo a chave Data para 
-    recuperar o valor em LancheController
-*@
-<h2>@ViewData["Data"]</h2>
+<div class="container">
+    <div class="row">
+       @foreach (var lanche in Model)
+       {
+        <div class="col-sm-4 col-md-4 col-lg-4">
+            <p><img src="@lanche.ImagemUrl" class="img-fluid"></p>
+            @*Formatar na moeda local*@
+            <h3>Preço : @lanche.Preco.ToString("c")</h3>
+            <h4>@lanche.Nome</h4>
+            <p>@lanche.DescricaoCurta</p>
 
-<hr />
-<h3>@ViewBag.Total @ViewBag.TotalLanches</h3>
-<hr />
-
-<h3>@TempData["Nome"];</h3>
-
-@foreach (var lanche in Model)
-{
-    <div>
-        <h4>@lanche.Nome</h4>
-        <p><img src="@lanche.ImagemUrl"></p>
-        @*Formatar na moeda local*@
-        <h3>Preço : @lanche.Preco.ToString("c")</h3>
+        </div>
+       }
     </div>
-    
-}
+</div>
