@@ -1,3 +1,15 @@
-﻿<h2>View Index </h2>
+﻿@model HomeViewModel
 
 <partial name="_Carousel"/>
+
+<h2>Os preferidos da semana</h2>
+<h4>Tá com Fome ???</h4>
+
+<div class="row">
+    @*Percorrer o modelo HomeViewModel*@
+    @foreach(var lanche in Model.LanchesPreferidos)
+    {
+        @*Para canda lanche do model passando ele como Model*@
+        <partial name="_LanchesResumo" for="@lanche"/>
+    }
+</div>
