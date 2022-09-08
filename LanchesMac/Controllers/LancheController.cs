@@ -26,24 +26,27 @@ namespace LanchesMac.Controllers
             }
             else
             {
-                if (string.Equals("Normal", categoria, StringComparison.OrdinalIgnoreCase))
-                {
-                    lanches = _lancheRepository.Lanches
-                        .Where(l => l.Categoria.CategoriaNome.Equals("Normal"))
-                        .OrderBy(l => l.Nome);
-                }
-                else if (string.Equals("Natural", categoria, StringComparison.OrdinalIgnoreCase))
-                {
-                    lanches = _lancheRepository.Lanches
-                    .Where(l => l.Categoria.CategoriaNome.Equals("Natural"))
-                    .OrderBy(l => l.Nome);
-                }
-                else
-                {
-                    lanches = _lancheRepository.Lanches
-                    .Where(l => l.Categoria.CategoriaNome.Equals(" "));
-                    categoria= "categoria não exite";
-                }
+                //if (string.Equals("Normal", categoria, StringComparison.OrdinalIgnoreCase))
+                //{
+                //    lanches = _lancheRepository.Lanches
+                //        .Where(l => l.Categoria.CategoriaNome.Equals("Normal"))
+                //        .OrderBy(l => l.Nome);
+                //}
+                //else if (string.Equals("Natural", categoria, StringComparison.OrdinalIgnoreCase))
+                //{
+                //    lanches = _lancheRepository.Lanches
+                //    .Where(l => l.Categoria.CategoriaNome.Equals("Natural"))
+                //    .OrderBy(l => l.Nome);
+                //}
+                //else
+                //{
+                //    lanches = _lancheRepository.Lanches
+                //    .Where(l => l.Categoria.CategoriaNome.Equals(" "));
+                //    categoria= "categoria não exite";
+                //}
+                lanches = _lancheRepository.Lanches
+                    .Where(l => l.Categoria.CategoriaNome.Equals(categoria))
+                    .OrderBy(c => c.Nome);
 
                 categoriaAtual = categoria;
             }
