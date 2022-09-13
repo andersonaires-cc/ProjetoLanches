@@ -32,7 +32,7 @@ namespace LanchesMac.Models
         [Range(1,999.99, ErrorMessage =" O preço deve estar entre 1 e 999.99")]
         public decimal Preco { get; set; }
         [Display(Name ="Caminho Imagem")]
-        [StringLength(200,ErrorMessage ="O {0} caminh deve ter no máximo {1} caracteres")]
+        [StringLength(200,ErrorMessage ="O {0} caminho deve ter no máximo {1} caracteres")]
         public string ImagemUrl { get; set; }
         public string ImagemThumbnailUrl { get; set; }
 

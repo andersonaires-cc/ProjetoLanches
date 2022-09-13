@@ -4,10 +4,10 @@
     <p><img src="@Model.ImagemUrl" class="img-fluid"></p>
     @*Formatar na moeda local*@
     <h3>Preço : @Model.Preco.ToString("c")</h3>
-
+    
     <h4>
         <a asp-controller="Lanche" asp-action="Details"
-        asp-route-lanche-Id="@Model.LancheId">@Model.Nome</a>
+        asp-route-lancheId="@Model.LancheId">@Model.Nome</a>
     </h4>
     
     <p>@Model.DescricaoCurta</p>
@@ -20,4 +20,5 @@
         </a>
         </p>
     </div>
+    
 </div>
