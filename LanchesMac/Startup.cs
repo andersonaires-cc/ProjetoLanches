@@ -26,6 +26,8 @@ public class Startup
         services.AddTransient<ILancheRepository, LancheRepository >();
         services.AddTransient<ICategoriaRepository, CategoriaRepository>();
 
+        services.AddTransient<IPedidoRepository, PedidoRepository>();
+
         services.AddSingleton<IHttpContextAccessor, HttpContextAccessor>();
         //Scoped criado a cada request 
         // se 2 clientes pedirem irão ter 2 carrinhos diferentes
