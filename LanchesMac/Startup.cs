@@ -2,6 +2,7 @@
 using LanchesMac.Models;
 using LanchesMac.Repositories;
 using LanchesMac.Repositories.Interfaces;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 
 namespace LanchesMac;
@@ -21,6 +22,12 @@ public class Startup
         services.AddDbContext<AppDbContext>(options =>
         options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
 
+
+        //IdentityUser gerenciar os usuarios
+        //IdentityRole gerenciar os perfis
+        services.AddIdentity<IdentityUser, IdentityRole>()
+            .AddEntityFrameworkStores<AppDbContext>()
+            .AddDefaultTokenProviders();
         // Injeção de Depedência Transient criar instância da classe(LancheRepository) 
         //e injetar no Construtor (ILancherRepository)
         services.AddTransient<ILancheRepository, LancheRepository >();
@@ -41,6 +48,8 @@ public class Startup
     // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
     public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
     {
+
+        // Pipeline de processamento de request
         if (env.IsDevelopment())
         {
             app.UseDeveloperExceptionPage();
@@ -55,9 +64,10 @@ public class Startup
         app.UseStaticFiles();
 
         app.UseRouting();
-
-        app.UseAuthorization();
         app.UseSession();
+        app.UseAuthentication(); // Middleware de Autenticação
+        app.UseAuthorization(); // Middleware de Autorização
+        
 
         app.UseEndpoints(endpoints =>
         {

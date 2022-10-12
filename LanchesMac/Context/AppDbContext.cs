@@ -1,10 +1,15 @@
 ﻿using LanchesMac.Models;
+using Microsoft.AspNetCore.Identity;
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 
 namespace LanchesMac.Context
 {
-    //Herdando de DbContext (carregando informações do DbContext
-    public class AppDbContext: DbContext
+    //Herdando de IdentityDbContext do tipo Identityuser)
+    //IdentityDbContext propriedades DbSet
+    // Identityuser  propriedades UserName,PassWordHas etc
+    // Identity para gerenciar usuários registrados no App 
+    public class AppDbContext: IdentityDbContext<IdentityUser>
     {
         //Construtor referenciando AppDbContext
         public AppDbContext(DbContextOptions<AppDbContext> options) : base(options) 
