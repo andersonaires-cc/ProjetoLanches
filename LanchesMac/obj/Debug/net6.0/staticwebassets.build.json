@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "V/taeh8ne5SoHWygTX1kZYKe7KT57xOFLfU/pxAvIL0=",
+  "Hash": "mTuFwWuDSJEGzH05FDIijfyEvi1NktzYJc/6A5H7KYw=",
   "Source": "LanchesMac",
   "BasePath": "_content/LanchesMac",
   "Mode": "Default",
@@ -219,6 +219,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\images\\Home-iconred.png"
+    },
+    {
+      "Identity": "C:\\Users\\christina Ferreira\\Desktop\\AndersonAires\\Cursos\\ASP.NET_Core_MVC\\Recursos\\LanchesMac\\LanchesMac\\wwwroot\\images\\icons8-add-user-male-48.png",
+      "SourceId": "LanchesMac",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\christina Ferreira\\Desktop\\AndersonAires\\Cursos\\ASP.NET_Core_MVC\\Recursos\\LanchesMac\\LanchesMac\\wwwroot\\",
+      "BasePath": "_content/LanchesMac",
+      "RelativePath": "images/icons8-add-user-male-48.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\icons8-add-user-male-48.png"
     },
     {
       "Identity": "C:\\Users\\christina Ferreira\\Desktop\\AndersonAires\\Cursos\\ASP.NET_Core_MVC\\Recursos\\LanchesMac\\LanchesMac\\wwwroot\\images\\icons8-user-group-48.png",
