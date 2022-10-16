@@ -30,7 +30,7 @@ public class Startup
             .AddDefaultTokenProviders();
         // Injeção de Depedência Transient criar instância da classe(LancheRepository) 
         //e injetar no Construtor (ILancherRepository)
-        services.AddTransient<ILancheRepository, LancheRepository >();
+        services.AddTransient<ILancheRepository, LancheRepository>();
         services.AddTransient<ICategoriaRepository, CategoriaRepository>();
 
         services.AddTransient<IPedidoRepository, PedidoRepository>();
@@ -67,10 +67,14 @@ public class Startup
         app.UseSession();
         app.UseAuthentication(); // Middleware de Autenticação
         app.UseAuthorization(); // Middleware de Autorização
-        
+
 
         app.UseEndpoints(endpoints =>
         {
+            endpoints.MapControllerRoute(
+                name: "areas",
+                pattern: "{area:exists}/{controller=Admin}/{action=Index}/{id?}");
+
             endpoints.MapControllerRoute(
                 name: "CategoriaFiltro",
                 pattern: "Lanche/{action}/{categoria?}",
