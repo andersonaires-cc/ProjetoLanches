@@ -69,6 +69,8 @@ namespace LanchesMac.Controllers
 
                 if (result.Succeeded)
                 {
+                    // todo usuário registrado estará no perfil Member
+                    await _userManager.AddToRoleAsync(user, "Member");
                     return RedirectToAction("Login", "Account");
                 }
                 else
