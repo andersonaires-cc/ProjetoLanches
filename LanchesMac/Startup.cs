@@ -35,6 +35,15 @@ public class Startup
         services.AddTransient<ICategoriaRepository, CategoriaRepository>();
         services.AddScoped<ISeedUserRoleInitial, SeedUserRoleInitial>();
 
+        services.AddAuthorization(options =>
+        {
+            options.AddPolicy("Admin",
+                politica =>
+                {
+                    politica.RequireRole("Admin"); //Requer o perfil Admin
+                });
+        });
+
         services.AddTransient<IPedidoRepository, PedidoRepository>();
 
         services.AddSingleton<IHttpContextAccessor, HttpContextAccessor>();

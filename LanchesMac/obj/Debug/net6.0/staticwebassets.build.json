@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "jOU8U69KdhCm9algIG2AZSx/ld8tpEVwx69UyrfjjPM=",
+  "Hash": "uAfRFw8csrqREgq6RDYp2DeBND9Mk/9MXa0oZtQkfZM=",
   "Source": "LanchesMac",
   "BasePath": "_content/LanchesMac",
   "Mode": "Default",
@@ -253,6 +253,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\images\\icons8-admin-settings-male-48.png"
+    },
+    {
+      "Identity": "C:\\Users\\christina Ferreira\\Desktop\\AndersonAires\\Cursos\\ASP.NET_Core_MVC\\Recursos\\LanchesMac\\LanchesMac\\wwwroot\\images\\icons8-entrada-proibida-96.png",
+      "SourceId": "LanchesMac",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\christina Ferreira\\Desktop\\AndersonAires\\Cursos\\ASP.NET_Core_MVC\\Recursos\\LanchesMac\\LanchesMac\\wwwroot\\",
+      "BasePath": "_content/LanchesMac",
+      "RelativePath": "images/icons8-entrada-proibida-96.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\icons8-entrada-proibida-96.png"
     },
     {
       "Identity": "C:\\Users\\christina Ferreira\\Desktop\\AndersonAires\\Cursos\\ASP.NET_Core_MVC\\Recursos\\LanchesMac\\LanchesMac\\wwwroot\\images\\icons8-user-group-48.png",

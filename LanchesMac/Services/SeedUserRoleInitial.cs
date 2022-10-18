@@ -69,7 +69,7 @@ namespace LanchesMac.Services
 
                 if (result.Succeeded)
                 {
-                    _usermanager.AddToRoleAsync(user, "admin").Wait();
+                    _usermanager.AddToRoleAsync(user, "Admin").Wait();
                 }
             }
         }
