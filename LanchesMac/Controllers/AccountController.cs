@@ -18,11 +18,12 @@ namespace LanchesMac.Controllers
             _signInManager = signInManager;
         }
         [AllowAnonymous]
-        public IActionResult Login(string ReturnUrl)
+        public IActionResult Login(string returnUrl)
         {
+            
             return View(new LoginViewModel()
             {
-                ReturnUrl = ReturnUrl
+                ReturnUrl = returnUrl
             });
         }
         [AllowAnonymous]
