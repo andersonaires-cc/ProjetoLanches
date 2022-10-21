@@ -11,7 +11,7 @@ build_property.RootNamespace = LanchesMac
 build_property.ProjectDir = C:\Users\christina Ferreira\Desktop\AndersonAires\Cursos\ASP.NET_Core_MVC\Recursos\LanchesMac\LanchesMac\
 build_property.RazorLangVersion = 6.0
 build_property.SupportLocalizedComponentNames = 
-build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = true
 build_property.MSBuildProjectDirectory = C:\Users\christina Ferreira\Desktop\AndersonAires\Cursos\ASP.NET_Core_MVC\Recursos\LanchesMac\LanchesMac
 build_property._RazorSourceGeneratorDebug = 
 
