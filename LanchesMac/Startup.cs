@@ -1,4 +1,5 @@
-﻿using LanchesMac.Context;
+﻿using LanchesMac.Areas.Admin.Servicos;
+using LanchesMac.Context;
 using LanchesMac.Models;
 using LanchesMac.Repositories;
 using LanchesMac.Repositories.Interfaces;
@@ -34,7 +35,9 @@ public class Startup
         //e injetar no Construtor (ILancherRepository)
         services.AddTransient<ILancheRepository, LancheRepository>();
         services.AddTransient<ICategoriaRepository, CategoriaRepository>();
+        services.AddTransient<IPedidoRepository, PedidoRepository>();
         services.AddScoped<ISeedUserRoleInitial, SeedUserRoleInitial>();
+        services.AddScoped<RelatorioVendasService>();
 
         services.AddAuthorization(options =>
         {
@@ -44,8 +47,6 @@ public class Startup
                     politica.RequireRole("Admin"); //Requer o perfil Admin
                 });
         });
-
-        services.AddTransient<IPedidoRepository, PedidoRepository>();
 
         services.AddSingleton<IHttpContextAccessor, HttpContextAccessor>();
         //Scoped criado a cada request 
