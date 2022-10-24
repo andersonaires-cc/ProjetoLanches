@@ -25,7 +25,7 @@ public class Startup
         services.AddDbContext<AppDbContext>(options =>
         options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
 
-
+        services.Configure<ConfigurationImagens>(Configuration.GetSection("ConfigurationPastaImagens"));
         //IdentityUser gerenciar os usuarios
         //IdentityRole gerenciar os perfis
         services.AddIdentity<IdentityUser, IdentityRole>()
