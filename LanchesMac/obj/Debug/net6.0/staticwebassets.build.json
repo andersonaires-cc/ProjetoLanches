@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "oTxPzsGi0fbHUCHVnKhwYBj4zG0ivGGC4EAtH2QvyX8=",
+  "Hash": "i9ZS6h7ZG01UPUpiGfi3KEzndm4Rm46Az6DN2u7rXto=",
   "Source": "LanchesMac",
   "BasePath": "_content/LanchesMac",
   "Mode": "Default",
@@ -338,6 +338,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\images\\icons8-vision-64.png"
+    },
+    {
+      "Identity": "C:\\Users\\christina Ferreira\\Desktop\\AndersonAires\\Cursos\\ASP.NET_Core_MVC\\Recursos\\LanchesMac\\LanchesMac\\wwwroot\\images\\logo_lanche2-sfd.png",
+      "SourceId": "LanchesMac",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\christina Ferreira\\Desktop\\AndersonAires\\Cursos\\ASP.NET_Core_MVC\\Recursos\\LanchesMac\\LanchesMac\\wwwroot\\",
+      "BasePath": "_content/LanchesMac",
+      "RelativePath": "images/logo_lanche2-sfd.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\logo_lanche2-sfd.png"
     },
     {
       "Identity": "C:\\Users\\christina Ferreira\\Desktop\\AndersonAires\\Cursos\\ASP.NET_Core_MVC\\Recursos\\LanchesMac\\LanchesMac\\wwwroot\\images\\phone-app-icon.png",
