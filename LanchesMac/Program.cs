@@ -1,3 +1,4 @@
+using FastReport.Data;
 using LanchesMac.Areas.Admin.Servicos;
 using LanchesMac.Context;
 using LanchesMac.Models;
@@ -15,6 +16,7 @@ var builder = WebApplication.CreateBuilder(args);
 var connection = builder.Configuration.GetConnectionString("DefaultConnection");
 builder.Services.AddDbContext<AppDbContext>(options =>
             options.UseSqlServer(connection));
+FastReport.Utils.RegisteredObjects.AddConnection(typeof(MsSqlDataConnection));
 
 builder.Services.Configure<ConfigurationImagens>(builder.Configuration.GetSection("ConfigurationPastaImagens"));
 //IdentityUser gerenciar os usuarios
@@ -71,6 +73,7 @@ else
 }
 app.UseHttpsRedirection();
 app.UseStaticFiles();
+app.UseFastReport();
 
 app.UseRouting();
 
