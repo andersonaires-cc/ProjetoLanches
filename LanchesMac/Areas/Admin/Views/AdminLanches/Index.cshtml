@@ -6,11 +6,7 @@
 
 <h1>Lanches</h1>
 
-<p>
-    <a asp-action="Create">Criar Lanches</a> | 
-    <a asp-controller="AdminLanchesReport" 
-    asp-action="LanchesCategoriaReport">Gerar Relatório</a>
-</p>
+
 
 <form method="get" class="form-inline">
 
@@ -22,6 +18,16 @@
 Total de Lanches : @Model.TotalRecordCount
 <div>
     <vc:pager paging-list="@Model"></vc:pager>
+</div>
+
+<div class="row">
+    <div class="col-md-12">
+        <a asp-action="Create">Criar Lanches</a> |
+        <a asp-controller="AdminLanchesReport"
+           asp-action="LanchesCategoriaReport">Gerar Relatório</a> |
+        <a asp-controller="AdminLanchesReport"
+           asp-action="LanchesCategoriaPDF">Gerar PDF</a>
+    </div>
 </div>
 
 <div class="row">
