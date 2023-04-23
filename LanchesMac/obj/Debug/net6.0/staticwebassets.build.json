@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "Q49jdEDsSQ7Trio7CNqz8zf0tAY96Np942S9kjaaa9M=",
+  "Hash": "PGZ/wqwjVXUAngszxGyoajbNNlFrZHzpF4m5FUYPBfo=",
   "Source": "LanchesMac",
   "BasePath": "_content/LanchesMac",
   "Mode": "Default",
@@ -474,6 +474,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\images\\produtos\\icons8-ifood-48.png"
+    },
+    {
+      "Identity": "C:\\Users\\christina Ferreira\\Desktop\\AndersonAires\\Cursos\\ASP.NET_Core_MVC\\Recursos\\LanchesMac\\LanchesMac\\wwwroot\\images\\produtos\\XPicanha.png",
+      "SourceId": "LanchesMac",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\christina Ferreira\\Desktop\\AndersonAires\\Cursos\\ASP.NET_Core_MVC\\Recursos\\LanchesMac\\LanchesMac\\wwwroot\\",
+      "BasePath": "_content/LanchesMac",
+      "RelativePath": "images/produtos/XPicanha.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\produtos\\XPicanha.png"
     },
     {
       "Identity": "C:\\Users\\christina Ferreira\\Desktop\\AndersonAires\\Cursos\\ASP.NET_Core_MVC\\Recursos\\LanchesMac\\LanchesMac\\wwwroot\\images\\remove.ico",
