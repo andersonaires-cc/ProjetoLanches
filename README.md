@@ -1,3 +1,5 @@
+<img src="https://img.shields.io/badge/STATUS-CONCLUÍDO-green"/>
+
 # ProjetoLanches
 Projeto ASP.NET Core MVC (Curso udemy)
 Utilizando: 
